@@ -1,13 +1,10 @@
 a,b=map(int,input().split())
 c=int(input())
-if(b+c>60):
-    a+=int((b+c)/60)
-    b+=(b+c)%60
-    if(a>24):
-        a-=24
-
-else:
-    b+=c
+w=a*60+b+c
+a=int(w/60)
+if(a>23):
+    a-=24
+b=w%60
 print("%d %d"%(a,b))
 
 
