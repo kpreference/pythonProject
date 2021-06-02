@@ -16,6 +16,9 @@ if dox[0]==dox[1]:
     x=dox[2]
 elif dox[2]==dox[1]:
     x=dox[0]
+
+
+
 if doy[0]==dox[1]:
     y=doy[2]
 elif doy[2]==doy[1]:
@@ -23,4 +26,4 @@ elif doy[2]==doy[1]:
 
 print("%d %d"%(x,y))
 
-#뭐가문제지
+#뭐가문제지 백준 제출했을 때 틀렸다고 뜸
