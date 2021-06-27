@@ -1,8 +1,11 @@
 def sosu(x):
     pan=0
-    for i in range(2,x):
-        if x%i==0:
-            pan+=1
+    if x==1:
+        return 1
+    else:
+        for i in range(2,x):
+            if x%i==0:
+                pan+=1
     return pan
 
 m=int(input())
