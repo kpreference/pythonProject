@@ -21,7 +21,7 @@ for i in range(c):
                 break
 
 '''
-
+''''''
 c=int(input())
 for i in range(c):
     i=0
