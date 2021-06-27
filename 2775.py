@@ -1,24 +1,24 @@
-def people_count(k,n):
-    global cnt
+def peocnt(k,n):
     i=0
-    if k==0:
-        cnt+=n
+    global sum
+    if k==1:
+        i=0
+        for i in range(n+1):
+            sum+=i
     else:
-        m=0
-        for m in range(k):
-            for p in range(k):
-                people_count(m,p)
+        i=0
+        for i in range(1,k+1):
+            peocnt(k,n)
 
-    return cnt
+
+
+sum=0
 
 a=int(input())
-
 for j in range(a):
-    global cnt
-    cnt=0
-    k = int(input())
-    n = int(input())
+    sum=0
+    b=int(input())
+    c=int(input())
+    peocnt(b,c)
 
-    print(people_count(k,n))
-
-
+    print(sum)

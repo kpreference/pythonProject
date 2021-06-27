@@ -1,25 +1,23 @@
 a,b,c=map(int,input().split())
-
 sum=0
-
-cc=0
-
-if a==b==c :
+big=0
+if a==b and b==c and c==a :
     sum+=10000
     sum+=(a*1000)
-elif a==b or a==c or b==c :
+elif a==b and b!=c:
     sum+=1000
-    cc=a
-    if a<b:
-        b=cc
-    if cc<c:
-        cc=c
-    sum+=(cc*100)
+    sum+=(a*100)
+elif c == b and b != a:
+    sum += 1000
+    sum += (b * 100)
+elif a == c and c != b:
+    sum += 1000
+    sum += (a * 100)
 else:
-    cc = a
-    if a < b:
-        b = cc
-    if cc < c:
-        cc = c
-    sum += (cc * 100)
+    big=a
+    if big<b:
+        big=b
+    if big<c:
+        big=c
+    sum+=(big*100)
 print(sum)
