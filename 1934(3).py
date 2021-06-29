@@ -10,3 +10,4 @@ for i in range(n):
     result=1
     a,b=map(int,input().split())
     print(lcd(a,b))
+#유클리드호제법
