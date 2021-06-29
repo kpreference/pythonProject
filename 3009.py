@@ -1,29 +1,25 @@
-dox=[]
-doy=[]
-
-x=0
-y=0
+xx=[]
+yy=[]
+xr=0
+yr=0
 
 for i in range(3):
-    a,b=map(int,input().split())
-    dox.append(a)
-    doy.append(b)
-
-dox.sort()
-doy.sort()
-
-if dox[0]==dox[1]:
-    x=dox[2]
-elif dox[2]==dox[1]:
-    x=dox[0]
+    x,y=map(int,input().split())
+    xx.append(x)
+    yy.append(y)
 
 
+xx.sort()
+yy.sort()
 
-if doy[0]==dox[1]:
-    y=doy[2]
-elif doy[2]==doy[1]:
-    y=doy[0]
+if xx[1]==xx[0]:
+    xr=xx[2]
+elif xx[1]==xx[2]:
+    xr=xx[0]
 
-print("%d %d"%(x,y))
+if yy[1]==yy[0]:
+    yr=yy[2]
+elif yy[1]==yy[2]:
+    yr=yy[0]
 
-#뭐가문제지 백준 제출했을 때 틀렸다고 뜸
+print(xr,yr)
