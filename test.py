@@ -1,10 +1,11 @@
-a=int(input())
-e=int(input())
-
-if a>2 and e<5:
-    print("TroyMartian")
-if a<7 and e>1:
-    print("VladSaturnian")
-if a<3 and e<4:
-    print("GraemeMercurian")
-
+print("    8888888888  888    88888")
+print("   88     88   88 88   88  88")
+print("    8888  88  88   88  88888")
+print("       88 88 888888888 88   88")
+print("88888888  88 88     88 88    888888")
+print("")
+print("88  88  88   888    88888    888888")
+print("88  88  88  88 88   88  88  88")
+print("88 8888 88 88   88  88888    8888")
+print(" 888  888 888888888 88  88      88")
+print("  88  88  88     88 88   88888888")
