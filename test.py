@@ -1,4 +1,4 @@
 while(1):
     a=input()
-    print("print(\"%s\")"%a)
+    print(ord(a))
 
