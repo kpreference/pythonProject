@@ -1,2 +1,2 @@
 n=input()
-print("%d"%int(n))
+print(ord(n))
