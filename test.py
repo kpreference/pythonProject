@@ -1,3 +1,3 @@
-a=input()
-for i in a:
+n=input()
+for i in n:
     print(ord(i))
