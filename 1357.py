@@ -1,28 +1,12 @@
 def rev(x):
-    result = 0
-    if x==1000 or x==100 or x==10 or x==1:
-        return 1
-    elif x>100:
-        result+=(x//100)
+    result=0
+    result+=((x%10)*100)
+    result+=int(x/100)
+    x-=(x%10)
+    x-=(int(x/100)*100)
+    result+=x
+    return result
 
-        x-=(result*100)
-
-        result+=(x%10)*100
-
-        result+=(x//10)*10
-
-        return result
-
-    elif x>10:
-        result+=((x%10)*10)
-        result+=(x//10)
-
-        return result
-    elif x<10:
-        return x*100
-
-
-a,b=map(int,input().split())
-
-
-print(rev(rev(a)+rev(b)))
+xx,y=map(int,input().split())
+print(rev(xx),rev(y))
+print(rev(rev(xx)+rev(y)))
