@@ -1,30 +1,21 @@
-em=[0,0,0,0,0,0,0,0]
+#20211947 곽선호
+b=[12,22,9,9,8,12,2,3,5]
+e1=0
+e2=0
+b.sort()
 cnt=0
-em[0],em[1],em[2],em[3],em[4],em[5],em[6],em[7]=map(int,input().split())
-if em[0]==1:
-    cnt=1
-    for i in range(8):
+for i in range(len(b)):
 
-        if cnt==em[i]:
-            cnt+=1
-        else:
-            break
-    if cnt==9:
-        print("ascending")
+    print(b[i])
+
+    if (e1+b[i])<31:
+
+        e1+=b[i]
+        cnt+=1
+    elif (e2+b[i])<31:
+        e2+=b[i]
+        cnt+=1
     else:
-        print("mixed")
+        continue
 
-elif em[0]==8:
-    cnt=8
-    for i in range(8):
-        if cnt==em[i]:
-            cnt-=1
-        else:
-            break
-    if cnt==0:
-        print("descending")
-    else:
-        print("mixed")
-else:
-    print("mixed")
-
+print(e1,e2,cnt)

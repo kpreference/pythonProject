@@ -1,3 +1,3 @@
-a,b=map(int,input().split())
-print("%d"%(a/b))
-print(a%b)
+n,m=map(int,input().split())
+print(int(n/m))
+print(n%m)
