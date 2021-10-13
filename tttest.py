@@ -1,6 +1,3 @@
-ax,ay,az=map(int,input().split())
-cx,cy,cz=map(int,input().split())
-
-print(cx-az,end=" ")
-print(cy//ay,end=" ")
-print(cz-ax)
+a=input()
+for i in range(2,len(a)):
+    print(i)
