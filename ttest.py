@@ -1,11 +1,5 @@
-i=1
-j=1
-while(1):
-    print("%d * %d = %d"%(i,j,i*j))
-    if j==9:
-        j=1
-        i+=1
-        print()
-    j+=1
-    if i==9 and j==9:
-        break
+for i in range(2,10):
+    for j in range(1,10):
+        print("%d * %d = %2d"%(i,j,i*j))
+
+    print()
