@@ -10,8 +10,9 @@ for i in range(m):
     tf=0
     for j in range(n):
         if mm[i]==nn[j]:
-            tf+=1
-    if tf>0:
+            tf=1
+
+    if tf==1:
         print(1)
     else:
         print(0)

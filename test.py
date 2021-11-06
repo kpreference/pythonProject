@@ -1,9 +1,11 @@
-def lcm(a, b):
-    return int(a * b / gcd(a, b))
-def gcd(a, b):
-    while b:
-        a, b = b, a%b
-    return a
+fac=1
+n=int(input())
+cnt=0
 
-a,b=map(int,input().split())
-print(gcd(a,b))
+for i in range(1,n+1):
+    fac*=i
+    if fac%10==0:
+        cnt+=1
+        fac/=10
+
+print(cnt)
