@@ -1,19 +1,20 @@
-e,s,m=map(int,input().split())
-
-
-for i in range(1,7981):
-    if (i%15==e) or (i%28==s) or (i%19==m):
-        if 
-    elif ((i%15==e) and (i%28==s) and (i%19==m)):
-        print(i)
+import sys
+e,s,m=map(int,sys.stdin.readline().split())
+ee=0
+ss=0
+mm=0
+cnt=0
+while(1):
+    cnt+=1
+    ee+=1
+    ss+=1
+    mm+=1
+    if ee==16:
+        ee-=15
+    if ss==29:
+        ss-=28
+    if mm==20:
+        mm-=19
+    if e==ee and s==ss and m==mm:
         break
-
-
-#      1 e 15     1 s 28          1 m 19    7980
-
-
-# 15 28 19 7980
-#역원 구하기
-#   중국인의 나머지 정리  CRT
-# 브루트포스
-# 13 28 9
+print(cnt)
